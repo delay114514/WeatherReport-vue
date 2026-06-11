@@ -1,6 +1,7 @@
 # WeatherReport-vue
 
-基于 Vue 3 + FastAPI 的智能天气预报应用，集成 DeepSeek AI 天气助手，数据来源为[高德开放平台天气 API](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)。
+基于 Vue 3 + FastAPI 的智能天气预报应用，集成 DeepSeek AI 天气助手，数据来源为[高德开放平台天气 API](https://lbs.amap.com/api/webservice/guide/api/weatherinfo);
+[和风天气实时天气预警API](https://dev.qweather.com/docs/api/warning/weather-alert/)
 
 ## 功能概览
 
@@ -255,7 +256,7 @@ LocationUnavailable 页面
   └─ [使用默认位置(北京)] → 北京东城区 (adcode=110101)
 ```
 
-> 注意：IP 定位已从已废弃的 `ip.useragentinfo.com` 迁移至 `ip-api.com`（免费套餐，无需 API Key，45 次/分钟速率限制）。默认北京位置不再自动启用，改为由用户在定位失败页面手动选择。
+
 
 ## API 端点
 

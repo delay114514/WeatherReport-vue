@@ -1,0 +1,6 @@
+node_modules/
+.venv/
+public/images/Chinamap.JPG
+dist/
+scripts/
+CLAUDE.md

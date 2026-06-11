@@ -1,0 +1,64 @@
+// ============================================
+// WeatherReport Vue - Mixins
+// ============================================
+
+// Frosted glass effect for search dropdown
+.frosted-glass(@bg: @frosted_bg, @blur: @frosted_blur) {
+  background-color: @bg;
+  backdrop-filter: blur(@blur);
+  -webkit-backdrop-filter: blur(@blur);
+}
+
+// Semi-transparent weather box
+.weather-box() {
+  background-color: @box_color;
+  border-radius: @border_radius_comset;
+}
+
+// Responsive width helper
+.responsive-width(@desktop: 500px, @tablet: 60%, @mobile: 90%) {
+  width: @mobile;
+  @media (min-width: @breakpoint_tablet) {
+    width: @tablet;
+  }
+  @media (min-width: @breakpoint_desktop) {
+    width: @desktop;
+  }
+}
+
+// Common font style for weather text (white, centered)
+.weather-font(@size: 2rem) {
+  color: @font_color;
+  font-size: @size;
+  display: block;
+}
+
+// Common font style for secondary weather text
+.weather-font-s(@size: 1.5rem) {
+  color: @font_color;
+  font-size: @size;
+  display: block;
+  margin: 17.5% auto;
+}
+
+// Center element with flex
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Centered block element
+.block-center() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Mobile first responsive container
+.responsive-container() {
+  width: 100%;
+  padding: 0 @spacing_md;
+  max-width: @breakpoint_wide;
+  margin: 0 auto;
+}

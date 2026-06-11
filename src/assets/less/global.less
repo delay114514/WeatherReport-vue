@@ -1,0 +1,105 @@
+// ============================================
+// WeatherReport Vue - Global Styles
+// ============================================
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: @font_color;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// App wrapper (receives dynamic background image)
+.app-wrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: @transition_bg;
+  position: relative;
+}
+
+// Heading defaults
+h1 {
+  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2.75vw, 1.75rem);
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+// Focus visible for accessibility
+:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 2px;
+}
+
+// Utility: visually hidden (for screen readers)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Page title
+h1.title {
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+  font-family: 'Courier New', Courier, monospace;
+  .block-center();
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}

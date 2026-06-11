@@ -1,6 +1,6 @@
 # WeatherReport-vue
 
-基于 Vue 3 + FastAPI 的智能天气预报应用，集成 DeepSeek AI 天气助手，数据来源为[高德开放平台天气 API](https://lbs.amap.com/api/webservice/guide/api/weatherinfo);
+基于 Vue 3 + FastAPI 的智能天气预报应用，暂引入DeepSeek-V4-flash作为AI agent 模型，数据来源为[高德开放平台天气 API](https://lbs.amap.com/api/webservice/guide/api/weatherinfo);
 [和风天气实时天气预警API](https://dev.qweather.com/docs/api/warning/weather-alert/)
 
 ## 功能概览

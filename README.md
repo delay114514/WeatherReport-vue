@@ -262,7 +262,6 @@ LocationUnavailable 页面
 
 | 方法 | 路径 | 说明 |
 |------|------|------|
-| `GET` | `/api/health` | 健康检查 |
 | `GET` | `/api/weather/combined?adcode=` | 实时 + 预报聚合数据 |
 | `GET` | `/api/weather/alerts?lat=&lon=` | 天气预警 |
 | `GET` | `/api/geocode/...` | 地理编码相关 |
